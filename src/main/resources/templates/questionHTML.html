@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Regiment Of Wonders</title>
+</head>
+<body>
+<h1>"Regiment Of Wonders"</h1>
+<p th:text="${quest}"></p>
+<form method="post" th:action="@{/hello}">
+    <input type="text" name="word"/>
+    <input type="submit" name="submitValue"/>
+</form>
+<p th:text="${error}"/>
+<p th:text="${wonder}"/>
+</body>
+</html>
